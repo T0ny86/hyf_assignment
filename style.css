@@ -1,7 +1,7 @@
 :root{
     --clr-primary:#1E6BAF;
     --clr-bg:rgba(148, 145, 240, 0.1);
-
+    --carousel-height: 400px;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -43,10 +43,12 @@ header #logo h1{
 header nav {
     width: 100%;
     background-color: var(--clr-primary);
+    border-radius: 5px;
 }
 header nav ul{
     font-size: large;
     font-weight: 500;
+    padding: 6px 0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -68,45 +70,102 @@ main{
 
 /* ======CAROUSEL====== */
 #carousel{
+    margin: 0;
+    padding: 0;
     width: 100%;
-    border: 1px dotted red;
-    min-height: 300px;
+    min-height: var(--carousel-height);
     position: relative;
 }
-#carousel .left-arrow,
-#carousel .right-arrow{
+#carousel #carousel-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: 1s all;
+}
+#carousel #left-arrow,
+#carousel #right-arrow{
     position: absolute;
     width: 100px;
     top: 0;
     height: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.3;
+    opacity: 0.5;
     cursor: pointer;
     z-index: 100;
     transition: opacity 0.15s;
-    border: 1px dotted blue;
+    
 }
-#carousel .left-arrow{
+#carousel #left-arrow{
     left: 0;
     background-image: url("./arrow.svg");
 }
-#carousel .right-arrow{
+#carousel #right-arrow{
     right: 0;
     background-image: url("./arrow.svg");
     transform: rotate(180deg);
 }
-#carousel .left-arrow:hover,
-#carousel .right-arrow:hover{
-    opacity: 1;
+#carousel #left-arrow:hover,
+#carousel #right-arrow:hover{
+    opacity: 0.9;
 }
 
+#carousel .carousel-title{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(30 , 30, 30, 0.65);
+    bottom: 0;
+}
+#carousel .carousel-title a{
+    color: whitesmoke;
+    display: block;
+    width: fit-content;
+    font-size:xx-large;
+    text-transform:capitalize;
+    text-align: center;
+    margin: 25px auto 10px;
+    transition: 2s all;
+}
+#carousel #carousel-txt:read-write{
+    transition: 2s all;
+
+}
+/* ====NEWS FEED====== */
+#container .feed{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.feed .weather table{
+    margin: 10px 5px;
+border: 1px solid black;
+text-align: center;
+font-size: medium;
+font-weight: bold;
+
+}
+table thead{
+    border: 1px solid black;
+}
+table td{
+    border: 1px solid black;
+}
+.feed .video{
+box-shadow: 15px 15px 15px rgba(5, 5, 5, 0.658);
+/* outline: 4px solid black; */
+}
 
 /* ====FOOTER======= */
 footer{
     width: 100%;
     background-color: var(--clr-primary);
     min-height:100px ; 
+    border-radius: 5px;
 }
 
 footer .footer-nav{

@@ -11,6 +11,7 @@
     <title>New News Network</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="main-container">
     <header>
@@ -33,16 +34,71 @@
 
     </aside>
     <main>
+        <!-- CAROUSEL section -->
         <section id="carousel">
-            <div class="left-arrow"></div>
-            <div class="carousel-img">
-                <img src="" >                
-            </div>
-            <div class="right-arrow"></div>
+            <div id="left-arrow" onclick="nextimg('l')"></div>
+            <div id="carousel-img"></div>
+            <div id="right-arrow" onclick="nextimg('r')"></div>
             <div class="carousel-title">
-                <h2>this is hot news</h2>
+                <a id="carousel-txt" href="#">hot news is comming</a>
             </div>
         </section>
+        <div id="container">
+            <!-- WEATHER table -->
+            <section class="feed">
+                <div class="weather">
+                    <table>
+                        <thead>
+                        	<tr>
+                                <th>City</th>
+                                <th>Condition</th>
+                                <th>Temperature</th>
+                                <th>Humidity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Berlin</td>
+                            <td>
+                               <img src="./cloudy.svg" alt="">                                
+                            </td>
+                            <td>19°</td>
+                            <td>40%</td>
+                          </tr>
+                          <tr>
+                            <td>Amsterdam</td>
+                            <td>
+                                <img src="./sunny.svg" alt="">
+                            </td>
+                            <td>22°</td>
+                            <td>35%</td>
+                          </tr>
+                          <tr>
+                            <td>Vienna</td>
+                            <td>
+                                <img src="./part-suny.svg" alt="">
+                            </td>
+                            <td>23°</td>
+                            <td>22%</td>
+                          </tr>
+                          <tr>
+                            <td>Paris</td>
+                            <td>
+                                <img src="./rainy-sunny.svg" alt="">
+                            </td>
+                            <td>20°</td>
+                            <td>45%</td>
+                          </tr>
+                        </tbody>
+                        </table>
+                </div>
+                <!-- embedded video -->
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GSyQayMEID8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+            <div class="clear"></div>
+        </div>
     </main>
     <footer>
         <div class="footer-nav">
