@@ -18,6 +18,9 @@ a{
     color: black;
     transition: color 0.25s;
 }
+ul{
+    list-style: none;
+}
 #main-container{
     max-width: 980px;
     background-color: var(--clr-bg);
@@ -42,7 +45,6 @@ header nav {
     background-color: var(--clr-primary);
 }
 header nav ul{
-    list-style: none;
     font-size: large;
     font-weight: 500;
     width: 100%;
@@ -64,8 +66,66 @@ main{
     min-height:500px ;
 }
 
+/* ======CAROUSEL====== */
+#carousel{
+    width: 100%;
+    border: 1px dotted red;
+    min-height: 300px;
+    position: relative;
+}
+#carousel .left-arrow,
+#carousel .right-arrow{
+    position: absolute;
+    width: 100px;
+    top: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity 0.15s;
+    border: 1px dotted blue;
+}
+#carousel .left-arrow{
+    left: 0;
+    background-image: url("./arrow.svg");
+}
+#carousel .right-arrow{
+    right: 0;
+    background-image: url("./arrow.svg");
+    transform: rotate(180deg);
+}
+#carousel .left-arrow:hover,
+#carousel .right-arrow:hover{
+    opacity: 1;
+}
+
+
+/* ====FOOTER======= */
 footer{
     width: 100%;
     background-color: var(--clr-primary);
     min-height:100px ; 
+}
+
+footer .footer-nav{
+    color: whitesmoke;
+    /* background: rgb(0,0,0); */
+}
+.footer-nav ul{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,107,175,1) 75%);
+    display: flex;
+    justify-content:space-evenly;
+}
+.footer-nav a{
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+.footer-nav a:hover{
+    color: gainsboro;
+    font-weight: bold;
+}
+.footer-copyright{
+    text-align: center;
 }
