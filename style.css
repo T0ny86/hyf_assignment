@@ -200,6 +200,47 @@ box-shadow: 15px 15px 15px rgba(5, 5, 5, 0.658);
     color: blue;
     text-decoration:underline;
 }
+/* ====shared style  == */
+.art-img{
+    width: 100%;
+    height: 300px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px grey;  
+}
+.art-text{
+    padding: 10px;
+    color:var(--clr-highlight-dark);
+    font-size: large;
+    text-shadow: 5px 5px 4px grey;  ;
+}
+.art-text span{
+    display: inline-block;
+    padding-left: 10px;
+}
+.art-text::first-letter{
+    color: var(--clr-primary);
+    font-size: larger;
+    font-weight: bolder;
+}
+/* ====Business section == */
+#business .art-img{
+    background-image: url("https://krify.co/wp-content/uploads/2019/09/5-Business-App-Ideas.png");
+}
+/* ====Technologies section == */
+#techno .art-img{
+    background-image: url("https://d6fiz9tmzg8gn.cloudfront.net/wp-content/uploads/2019/02/15tech-Banner.jpg");
+}
+/* ====Health section == */
+#health .art-img{
+    background-image: url("https://gloucester-ma.gov/ImageRepository/Document?documentID=6094");
+}
+/* ====Sport section == */
+#sport .art-img{
+    background-image: url("https://i.pinimg.com/originals/f8/51/8f/f8518f5f4f43c6694c3103bc2212585c.jpg");
+}
 /* ====jumb To UP == */
 #toUp{
     background-image: url("./arrow.svg");
