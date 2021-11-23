@@ -13,26 +13,25 @@
 </head>
 
 <body>
-    <div id="main-container">
+    <div class="main-container">
     <header>
         <div id="logo">
             <img src="./logo.png" alt="">
             <h1>New News Network</h1>
         </div>
+        <!-- clear float behaviour for below elements -->
         <div class="clear"></div>
         <nav>
             <ul>
-                <li><a href="#">hot news</a></li>
-                <li><a href="#">business</a></li>
-                <li><a href="#">technologies</a></li>
-                <li><a href="#">health</a></li>
-                <li><a href="#">sport</a></li>
+                <li><a href="#hotnews">hot news</a></li>
+                <li><a href="#business">business</a></li>
+                <li><a href="#techno">technologies</a></li>
+                <li><a href="#health">health</a></li>
+                <li><a href="#sport">sport</a></li>
             </ul>
         </nav>
     </header>
-    <aside>
 
-    </aside>
     <main>
         <!-- CAROUSEL section -->
         <section id="carousel">
@@ -43,7 +42,7 @@
                 <a id="carousel-txt" href="#">hot news is comming</a>
             </div>
         </section>
-        <div id="container">
+        <div class="container">
             <!-- WEATHER table section -->
             <section class="feed">
                 <div class="weather">
@@ -98,9 +97,9 @@
                 </div>
             </section>
             <!-- HOT NEWS section -->
-            <section class="hotnews">
+            <section id="hotnews">
                 <!-- article number 1 -->
-                <article>
+                <article id="art-corona">
                     <div class="article-img">
                         <img src="https://image.freepik.com/free-vector/covid-19-novel-coronavirus-latest-news-banner-template_1017-24548.jpg" alt="">
                     </div>
@@ -113,7 +112,7 @@
                     </div>
                 </article>
                 <!-- article number 2 -->
-                <article>
+                <article id="art-politic">
                     <div class="article-text">
                         <h2>The SPD, Greens and FDP want to form a government</h2>
                         <p>
@@ -126,7 +125,7 @@
                     </div>
                 </article>
                 <!-- article number 3 -->
-                <article>
+                <article id="art-refugee">
                     <div class="article-img">
                         <img src="https://scd.infomigrants.net//media/resize/my_image_big/2a7632b04e27d617ccfa2b69f53541618bdcc13a.jpeg" alt="">
                     </div>
@@ -139,7 +138,7 @@
                     </div>
                 </article>
                 <!-- article number 4 -->
-                <article>
+                <article id="art-football">
                     <div class="article-text">
                         <h2>Volksfutbol! How German football stays a true game of the people</h2>
                         <p>
@@ -152,16 +151,27 @@
                     </div>
                 </article>
             </section>
+            <hr>
+            <!-- BUSINESS section -->
+            <section id="business"></section>
+            <!-- TECHNO section -->
+            <section id="techno"></section>
+            <!-- HEALTH section -->
+            <section id="health"></section>
+            <!-- SPORT section -->
+            <section id="sport"></section>
         </div>
+        <!-- up btn -->
+        <div id="toUp" onclick="location.href='#logo' " > </div>
     </main>
     <footer>
         <div class="footer-nav">
             <ul>
-                <li><a href="#">hot news</a></li>
-                <li><a href="#">business</a></li>
-                <li><a href="#">technologies</a></li>
-                <li><a href="#">health</a></li>
-                <li><a href="#">sport</a></li>
+                <li><a href="#hotnews">hot news</a></li>
+                <li><a href="#business">business</a></li>
+                <li><a href="#techno">technologies</a></li>
+                <li><a href="#health">health</a></li>
+                <li><a href="#sport">sport</a></li>
             </ul>
         </div>
         <div class="footer-copyright">

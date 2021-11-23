@@ -23,7 +23,7 @@ a{
 ul{
     list-style: none;
 }
-#main-container{
+.main-container{
     max-width: 980px;
     background-color: var(--clr-bg);
     padding: 10px;
@@ -141,7 +141,7 @@ main{
 }
 
 /* ====NEWS FEED====== */
-#container .feed{
+.container .feed{
 display: flex;
 justify-content: space-evenly;
 align-items: center;
@@ -165,31 +165,31 @@ box-shadow: 15px 15px 15px rgba(5, 5, 5, 0.658);
 /* outline: 4px solid black; */
 }
 /* ====HOT NEWS===== */
-.hotnews article{
+#hotnews article{
     display: flex;
 }
-.hotnews .article-img img{
+#hotnews .article-img img{
     width: 100%;
     height: 300px;
     box-shadow: 8px 10px 15px rgba(30 , 30, 30, 0.65);
 }
-.hotnews article .article-img{
+#hotnews article .article-img{
     padding: 10px;
     flex: 40%;
 }
-.hotnews article .article-text{
+#hotnews article .article-text{
     flex: 40%;
     padding: 10px;
 }
-.hotnews article .article-text h2{
+#hotnews article .article-text h2{
     text-shadow:  6px 7px 5px rgba(30 , 30, 30, 0.65);;
     transition: 0.1ms all;
     cursor: pointer;
 }
-.hotnews article .article-text h2:hover{
+#hotnews article .article-text h2:hover{
     color:var(--clr-highlight-dark) ;
 }
-.hotnews article .article-text p{
+#hotnews article .article-text p{
     color: var(--clr-highlight-dark);
 }
 .article-more{
@@ -199,6 +199,21 @@ box-shadow: 15px 15px 15px rgba(5, 5, 5, 0.658);
 .article-more:hover{
     color: blue;
     text-decoration:underline;
+}
+/* ====jumb To UP == */
+#toUp{
+    background-image: url("./arrow.svg");
+    transform: rotate(90deg);
+    opacity: 0.6;
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 150px;
+    right: 150px;
+}
+#toUp:hover{
+    opacity: 1;
 }
 /* ====FOOTER======= */
 footer{
