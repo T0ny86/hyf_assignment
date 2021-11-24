@@ -6,5 +6,10 @@ like using html semantic elements, float, flex, grid, variety css selectors, and
 it is not a responsive design yet ..
 the assignment does not focusing in this topic
 
-the pictures are outsourced from the original websites that owner these images ,
-# and my use case in this project just for learning purpose not more
+### the preview link : https://t0ny86.github.io/hyf_assignment/
+
+## the pictures are outsourced from the original websites that owner these images ,
+## and my use case in this project just for learning purpose not more
+
+ Codepen copy : https://codepen.io/T0ny86/full/YzxoeWx
+
